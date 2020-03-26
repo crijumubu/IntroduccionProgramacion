@@ -11,11 +11,9 @@ if d>0:
     x2=(-b-(d**0.5))/(2*a)
     print("x1=",x1)
     print("x2=",x2)
-    
 elif d==0:
     d=-b/(2*a)
     print("d corresponde a:-b/2a que es igual a:", d)
-    
 else: 
     print("No existe solución a la ecuación cuadrática dentro del dominio de los números reales")
 
