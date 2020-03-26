@@ -2,14 +2,24 @@
 """
 Created on Mon Mar 23 22:00:34 2020
 
-a=int(input("Ingrese un primer número"))
-b=int(input("Ingrese un segundo número"))
-c=int(input("Ingrese un tercer número"))
-d=int(input("Ingrese un cuarto número"))
-print("El producto del primer y tercer número que ingresó es:", a*c)
-print("El doble del primer número que ingresó es:", 2*a)
-print("El segundo número que ingresó es:", b)
-print("La raíz cuadrada del cuarto número que ingresó es:", d**0.5)
+a=int(input("Ingrese el valor de a para la ecuación cuadrática: "))
+b=int(input("Ingrese el valor de b para la ecuación cuadrática: "))
+c=int(input("Ingrese el valor de c para la ecuación cuadrática: "))
+
+d=(b**2)-4*a*c
+
+if d>o:
+    x1=(-b+(d**1/2))/2*a
+    x2=(-b-(d*1/2))/2*a
+    print("x1=",x1)
+    print("x2=",x2)
+    if d==0:
+        print("d corresponde a:-b/2a")
+        if d<o:
+            print("No existe solución a la ecuación cuadrática dentro del dominio de los números reales")
+
+
+
 
 @author: user
 """
