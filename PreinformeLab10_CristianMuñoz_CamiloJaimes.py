@@ -17,7 +17,6 @@ def media(Utilidad):
         suma1 += Utilidad[i1]
         cont1 += 1
     media1 = suma1/cont1
-    return media1
 
 #Media de la utilidad operacional de los dos últimos años de registro
 
@@ -35,13 +34,4 @@ def media(Utilidad):
     
 media(Utilidad)
 
-
-   
-        
-        
-
-
 "@author: user"
-
-
-
