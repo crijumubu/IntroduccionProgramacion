@@ -17,7 +17,11 @@ def diferencia1(Utilidad):
         suma1 += Utilidad[i1]
         cont1 += 1
     media1 = suma1/cont1
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 94c90b1904783e55f537ac7ca8a05bfd1483d3be
 #Media de la utilidad operacional de los dos últimos años de registro
 
     suma2=0
@@ -40,6 +44,7 @@ def diferencia3(Utilidad):
     
 #Año con mayor utilidad operacional
 
+<<<<<<< HEAD
     long = len(Utilidad)
     mayor = Utilidad[0]
     cont3 = 0
@@ -128,7 +133,6 @@ porcentaje_utilidad(Utilidad)
     
          
     
+=======
+>>>>>>> 94c90b1904783e55f537ac7ca8a05bfd1483d3be
 "@author: user"
-
-
-
