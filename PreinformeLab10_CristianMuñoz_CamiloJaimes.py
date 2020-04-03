@@ -111,7 +111,7 @@ def porcentaje_utilidad(Utilidad):
     for i6 in range(0,long):
         suma4 += Utilidad[i6]
         
-#Utilidad operacional de cada año
+#Utilidad operacional de cada año y porcentaje que aporta
 
     for i7 in range(0, long):
         porcentaje_que_aporta = round((Utilidad[i7] / suma4)*100 , 2)
