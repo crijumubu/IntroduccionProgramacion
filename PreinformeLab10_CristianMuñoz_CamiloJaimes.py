@@ -145,7 +145,7 @@ def deficit_cada_año(Utilidad):
         cont7 += 1
     media4 = int(suma6/cont7)
     
-#Hallamos el defícit operecaional de cada año con respecto a la media
+#Hallamos el déficit operecaional de cada año con respecto a la media
     
     año = 2008
     for i10 in range(0,long):
