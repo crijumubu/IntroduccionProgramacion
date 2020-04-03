@@ -129,7 +129,7 @@ def deficit(Utilidad):
         deficit -= Utilidad[i7]
     return deficit
         
-print("El defícit operacional del año 2017 con respecto al año anterior es: " + str(abs(deficit(Utilidad))) + " COP")
+print("El déficit operacional del año 2017 con respecto al año anterior es: " + str(abs(deficit(Utilidad))) + " COP")
 
 #%% PUNTO 7
 
