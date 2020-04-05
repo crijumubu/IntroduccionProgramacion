@@ -42,20 +42,16 @@ def diferencia3(Utilidad):
 
     long = len(Utilidad)
     mayor = Utilidad[0]
-    cont3 = 0
     for i3 in range(1,long):
-        if Utilidad[cont3]<Utilidad[i3]:
+        if mayor<Utilidad[i3]:
             mayor = Utilidad[i3]
-        cont3 += 1
 
 #Año con menor utilidad operacional
 
     menor = Utilidad[0]
-    cont4 = 0
     for i4 in range(1,long):
-        if Utilidad[cont4]>Utilidad[i4]:
+        if menor>Utilidad[i4]:
             menor = Utilidad[i4]
-        cont4 += 1
         
 #Diferencia entre las utilidades operacionales del año con mayor utilidad y el año con menor utilidad
 
@@ -111,7 +107,7 @@ def porcentaje_utilidad(Utilidad):
     for i6 in range(0,long):
         suma4 += Utilidad[i6]
         
-#Utilidad operacional de cada año
+#Utilidad operacional de cada año y porcentaje que aporta
 
     for i7 in range(0, long):
         porcentaje_que_aporta = round((Utilidad[i7] / suma4)*100 , 2)
@@ -119,5 +115,43 @@ def porcentaje_utilidad(Utilidad):
         año += 1
         
 porcentaje_utilidad(Utilidad)
+
+#%% PUNTO 6
+
+def deficit(Utilidad):
+    
+    deficit=0
+    for i7 in range(8, 10):
+        deficit = Utilidad[i7]-deficit
+    return deficit
+        
+print("El déficit operacional del año 2017 con respecto al año anterior es: " + str(abs(deficit(Utilidad))) + " COP")
+
+#%% PUNTO 7
+
+def deficit_cada_año(Utilidad):
+    
+#Hallamos la media
+    
+    long= len(Utilidad)
+    suma6 = 0
+    cont7 = 0
+    for i9 in range(0,long):
+        suma6 += Utilidad[i9]
+        cont7 += 1
+    media4 = int(suma6/cont7)
+    
+#Hallamos el déficit operecaional de cada año con respecto a la media
+    
+    año = 2008
+    for i10 in range(0,long):
+        deficit1 = round((((media4 - Utilidad[i10]) / media4) * 100), 2)
+        if deficit1<0:
+            print("El año " +str(año) + " no tuvo un déficit operacional ya que está por éncima de la media")
+        else:
+            print("El déficit operacional del año " + str(año) + " es: " + str(deficit1) + "%")
+        año +=1
+        
+deficit_cada_año(Utilidad)
         
 "@author: user"
