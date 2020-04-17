@@ -30,14 +30,13 @@ def Supercomputadora_con_más_nucleos(Supercomputadoras):
     
 Supercomputadora_con_más_nucleos(Supercomputadoras)
 
-#%%SuperComputadoras con más 50.000 Rmax (es decir, que el menor registro supere los 50000 TFlops/s)
+#%%SuperComputadoras que superen con su menor registro de TFlops/s el valor ingresado por el usuario 
 
-def Supercomputadoras_Rmax(Supercomputadoras, a, b=1):
+def Supercomputadoras_Rmax(Supercomputadoras, a):
     niveles,columnas= Supercomputadoras.shape
-    if b==1:
-        for i in range(0,niveles):
-            if int(Supercomputadoras[i,2])>a:
-                print("Las computadoras con mas de " +str(a) + " TFlops/s son: ")
+    for i in range(0,niveles):
+        if int(Supercomputadoras[i,2])>a:
+            print("Las computadoras con mas de " +str(a) + " TFlops/s son: ")
                 break
             else:
                 print("No hay ninguna computadora con mas de " + str(a) + " TFlops/s")
