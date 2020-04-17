@@ -41,6 +41,7 @@ def Supercomputadoras_Rmax(Supercomputadoras, a, b=1):
                 break
             else:
                 print("No hay ninguna computadora con mas de " + str(a) + " TFlops/s")
+                break
     
     for i in range(0,niveles):
         if int(Supercomputadoras[i,2])>a:
