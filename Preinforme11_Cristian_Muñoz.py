@@ -36,10 +36,10 @@ def Supercomputadoras_Rmax(Supercomputadoras, a):
     niveles,columnas= Supercomputadoras.shape
     for i in range(0,niveles):
         if int(Supercomputadoras[i,2])>a:
-            print("Las supercomputadoras con mas de " +str(a) + " TFlops/s son: ")
+            print("Las supercomputadoras con más de " +str(a) + " TFlops/s son: ")
             break
         else:
-            print("No hay ninguna supercomputadora con mas de " + str(a) + " TFlops/s en su menor registro")
+            print("No hay ninguna supercomputadora con más de " + str(a) + " TFlops/s en su menor registro")
             break
     
     for i in range(0,niveles):
