@@ -26,7 +26,7 @@ def Supercomputadora_con_más_nucleos(Supercomputadoras):
         if int(máx)<int(Supercomputadoras[i,1]):
             máx=Supercomputadoras[i,1]
             nombre_máx_supercomputadora= Supercomputadoras[i,0]
-    print("La computadora que más tiene núcleos es " + nombre_máx_supercomputadora + " y tiene " + str(máx) + " núcleos")
+    print("La supercomputadora que más tiene núcleos es " + nombre_máx_supercomputadora + " y tiene " + str(máx) + " núcleos")
     
 Supercomputadora_con_más_nucleos(Supercomputadoras)
 
