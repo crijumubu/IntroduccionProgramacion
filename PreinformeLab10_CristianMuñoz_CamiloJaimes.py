@@ -318,4 +318,3 @@ def deficit_cada_año(Utilidad):
 deficit_cada_año(Utilidad)
         
 "@author: user"
->>>>>>> 769967111ec9395f701d8998006453e219b7f4ce
