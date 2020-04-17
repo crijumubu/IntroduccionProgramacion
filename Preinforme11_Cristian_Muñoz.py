@@ -36,10 +36,10 @@ def Supercomputadoras_Rmax(Supercomputadoras, a):
     niveles,columnas= Supercomputadoras.shape
     for i in range(0,niveles):
         if int(Supercomputadoras[i,2])>a:
-            print("Las computadoras con mas de " +str(a) + " TFlops/s son: ")
-                break
+            print("Las supercomputadoras con mas de " +str(a) + " TFlops/s son: ")
+            break
         else:
-            print("No hay ninguna computadora con mas de " + str(a) + " TFlops/s")
+            print("No hay ninguna supercomputadora con mas de " + str(a) + " TFlops/s en su menor registro")
             break
     
     for i in range(0,niveles):
@@ -49,7 +49,7 @@ def Supercomputadoras_Rmax(Supercomputadoras, a):
 a = int(input("Ingrese la cantidad de TFlops/s para determinar cuales supercomputadoras han tenido en su menor registro un valor mayor al ingresado: "))
 Supercomputadoras_Rmax(Supercomputadoras, a)
 
-#%%Promedio de cada una de las computadoras de su mínimo TFlops/s registrado y su máximo TFlops/s registrado 
+#%%Promedio de cada una de las supercomputadoras de su mínimo TFlops/s registrado y su máximo TFlops/s registrado 
 
 def Supercomputadoras_promedio(Supercomputadoras):
     niveles,columnas= Supercomputadoras.shape
