@@ -2,24 +2,21 @@
 
 "Created on Mon Apr 20 16:25:50 2020"
 
-def generador(a,b):
+def generador():
     import numpy as np
-    array=np.zeros(shape=(4,12))
+    ingresos=np.zeros(shape=(4,12))
+    egresos=np.zeros(shape=(4,12))
 
     import random
-    filas,columnas = array.shape
+    filas,columnas = ingresos.shape
     for i in range (0,filas):
         for i1 in range (0,columnas):
-            numero_aleatorio = random.randrange(a,b)
-            array[i,i1]= numero_aleatorio
-    print(array)
+            numero_aleatorio_ingresos= random.randrange(100,180)
+            numero_aleatorio_egresos= random.randrange(60,130)
+            ingresos[i,i1]= numero_aleatorio_ingresos
+            egresos[i,i1]= numero_aleatorio_egresos
+    print(ingresos, egresos)
 
-print("A continuación, ingrese el rango para los numeros pseudoaleatorios:")
-a = int(input())
-b= int(input())
-generador(a,b)
+generador()
 
 "@author: user"
-
-
-
