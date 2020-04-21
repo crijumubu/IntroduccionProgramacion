@@ -15,8 +15,17 @@ def generador():
             numero_aleatorio_egresos= random.randrange(60,130)
             ingresos[i,i1]= numero_aleatorio_ingresos
             egresos[i,i1]= numero_aleatorio_egresos
-    print(ingresos, egresos)
+    return ingresos,egresos
 
-generador()
+def imprimir():
+    ingresos,egresos= generador()
+    filas_in,columnas_in= ingresos.shape
+    print("El arreglo ingresos tiene " + str(filas_in) + " filas y " + str(columnas_in) + "columnas")
+    print(ingresos) 
+    filas_e,columnas_e= egresos.shape
+    print("El arreglo egresos tiene " + str(filas_e) + " filas y " + str(columnas_e) + "columnas")
+    print(egresos) 
+
+imprimir()
 
 "@author: user"
