@@ -2,6 +2,8 @@
 
 "Created on Mon Apr 20 16:25:50 2020"
 
+meses=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
+
 def generador():
     import numpy as np
     ingresos=np.zeros(shape=(4,12))
@@ -22,7 +24,6 @@ def generador():
     return ingresos,egresos
 
 def imprimir(arreglo):
-    meses=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
     filas,columnas= arreglo.shape
     print("El arreglo tiene " + str(filas) + " filas y " + str(columnas) + " columnas")
     print(meses)
@@ -69,7 +70,32 @@ def mejor_ciudad():
         print("La ciudad con mayor ganancias es Girón")
     else:
         print("La ciudad con mayor ganancias es Piedecuesta")
+    return ganancias
 
-mejor_ciudad()
-        
+def peor_ciudad():
+    ganancias= mejor_ciudad()
+    filas,columnas=ganancias.shape
+    suma_ganancias_bga=0
+    for i in range(0,columnas):
+        suma_ganancias_bga+=ganancias[0,i]
+    suma_ganancias_flo=0
+    for i in range(0,columnas):
+        suma_ganancias_flo+=ganancias[1,i] 
+    suma_ganancias_gir=0
+    for i in range(0,columnas):
+        suma_ganancias_gir+=ganancias[2,i]
+    suma_ganancias_pie=0
+    for i in range(0,columnas):
+        suma_ganancias_pie+=ganancias[3,i]
+    if suma_ganancias_flo>suma_ganancias_bga<suma_ganancias_gir and suma_ganancias_bga<suma_ganancias_pie:
+        print("La ciudad con menor ganancias es Bucaramanga")
+    elif suma_ganancias_bga>suma_ganancias_flo<suma_ganancias_gir and suma_ganancias_flo<suma_ganancias_pie:
+        print("La ciudad con menor ganancias es Floridablanca")
+    elif suma_ganancias_bga>suma_ganancias_gir<suma_ganancias_flo and suma_ganancias_gir<suma_ganancias_pie:
+        print("La ciudad con menor ganancias es Girón")
+    else:
+        print("La ciudad con menor ganancias es Piedecuesta")
+    
+peor_ciudad()
+
 "@author: user"
