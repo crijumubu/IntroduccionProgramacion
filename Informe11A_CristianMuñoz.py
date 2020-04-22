@@ -95,7 +95,40 @@ def peor_ciudad():
         print("La ciudad con menor ganancias es Girón")
     else:
         print("La ciudad con menor ganancias es Piedecuesta")
-    
-peor_ciudad()
+    return ganancias
 
+def mejor_mes():
+    ganancias=peor_ciudad()
+    filas,columnas=ganancias.shape
+    mejor_mes_bga=ganancias[0,0]
+    for i in range(1,columnas):
+        if mejor_mes_bga<ganancias[0,i]:
+            mejor_mes_bga=ganancias[0,i]
+            cont=i
+        if columnas-1==i:
+            print("El mejor mes en Bucaramanga fue: " +str(meses[cont]))
+    mejor_mes_flo=ganancias[1,0]
+    for i1 in range(1,columnas):
+        if mejor_mes_flo<ganancias[1,i1]:
+            mejor_mes_flo=ganancias[1,i1]
+            cont=i1
+        if columnas-1==i1:
+            print("El mejor mes en Floridablanca fue: " +str(meses[cont]))
+    mejor_mes_gir=ganancias[2,0]
+    for i2 in range(1,columnas):
+        if mejor_mes_gir<ganancias[2,i2]:
+            mejor_mes_gir=ganancias[2,i2]
+            cont=i2
+        if columnas-1==i2:
+            print("El mejor mes en Girón fue: " +str(meses[cont]))
+    mejor_mes_pie=ganancias[3,0]
+    for i3 in range(1,columnas):
+        if mejor_mes_pie<ganancias[3,i3]:
+            mejor_mes_pie=ganancias[3,i2]
+            cont=i3
+        if columnas-1==i3:
+            print("El mejor mes en Piedecuesta fue: " +str(meses[cont]))
+    
+mejor_mes() 
+        
 "@author: user"
