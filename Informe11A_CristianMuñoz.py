@@ -26,7 +26,7 @@ def generador():
 def imprimir(arreglo):
     filas,columnas= arreglo.shape
     print("El arreglo tiene " + str(filas) + " filas y " + str(columnas) + " columnas")
-    print(meses)
+    print("Meses", meses)
     print("Bucaramanga",arreglo[0]) 
     print("Floridablanca",arreglo[1]) 
     print("Girón",arreglo[2])
@@ -128,7 +128,40 @@ def mejor_mes():
             cont=i3
         if columnas-1==i3:
             print("El mejor mes en Piedecuesta fue: " +str(meses[cont]))
-    
-mejor_mes() 
+    return ganancias
         
+def peor_mes():
+    ganancias=mejor_mes()
+    filas,columnas=ganancias.shape
+    peor_mes_bga=ganancias[0,0]
+    for i in range(1,columnas):
+        if peor_mes_bga>ganancias[0,i]:
+            peor_mes_bga=ganancias[0,i]
+            cont=i
+        if columnas-1==i:
+            print("El peor mes en Bucaramanga fue: " +str(meses[cont]))
+    peor_mes_flo=ganancias[1,0]
+    for i1 in range(1,columnas):
+        if peor_mes_flo>ganancias[1,i1]:
+            peor_mes_flo=ganancias[1,i1]
+            cont=i1
+        if columnas-1==i1:
+            print("El peor mes en Floridablanca fue: " +str(meses[cont]))
+    peor_mes_gir=ganancias[2,0]
+    for i2 in range(1,columnas):
+        if peor_mes_gir>ganancias[2,i2]:
+            peor_mes_gir=ganancias[2,i2]
+            cont=i2
+        if columnas-1==i2:
+            print("El peor mes en Girón fue: " +str(meses[cont]))
+    peor_mes_pie=ganancias[3,0]
+    for i3 in range(1,columnas):
+        if peor_mes_pie>ganancias[3,i3]:
+            peor_mes_pie=ganancias[3,i2]
+            cont=i3
+        if columnas-1==i3:
+            print("El peor mes en Piedecuesta fue: " +str(meses[cont]))
+ 
+peor_mes()
+
 "@author: user"
