@@ -19,12 +19,21 @@ def generador():
 
 def imprimir():
     ingresos,egresos= generador()
+    meses=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
     filas_in,columnas_in= ingresos.shape
-    print("El arreglo ingresos tiene " + str(filas_in) + " filas y " + str(columnas_in) + "columnas")
-    print(ingresos) 
+    print("El arreglo ingresos tiene " + str(filas_in) + " filas y " + str(columnas_in) + " columnas")
+    print(meses)
+    print("Bucaramanga",ingresos[0]) 
+    print("Floridablanca",ingresos[1]) 
+    print("Girón",ingresos[2])
+    print("Piedecuesta",ingresos[3])
     filas_e,columnas_e= egresos.shape
-    print("El arreglo egresos tiene " + str(filas_e) + " filas y " + str(columnas_e) + "columnas")
-    print(egresos) 
+    print("El arreglo egresos tiene " + str(filas_e) + " filas y " + str(columnas_e) + " columnas")
+    print(meses)
+    print("Bucaramanga",egresos[0]) 
+    print("Floridablanca",egresos[1]) 
+    print("Girón",egresos[2])
+    print("Piedecuesta",egresos[3])
 
 imprimir()
 
