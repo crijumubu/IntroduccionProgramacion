@@ -19,7 +19,7 @@ def generador():
     imprimir(ingresos)
     print("Arreglo egresos:")
     imprimir(egresos)
-generador()
+    return ingresos,egresos
 
 def imprimir(arreglo):
     meses=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
@@ -30,3 +30,20 @@ def imprimir(arreglo):
     print("Floridablanca",arreglo[1]) 
     print("Girón",arreglo[2])
     print("Piedecuesta",arreglo[3])
+
+def restador():
+    import numpy as np
+    ganancias=np.zeros(shape=(4,12))
+    ingresos,egresos= generador()
+    filas_in,columnas_in=ingresos.shape
+    filas_egre,columnas_egre=ingresos.shape
+    if filas_in==filas_egre and columnas_in==columnas_egre:
+        for i in range(0,filas_in):
+            for i1 in range(0, columnas_in):
+                resta=ingresos[i,i1]-egresos[i,i1]
+                ganancias[i,i1]=resta
+    print("Arreglo ganacias:")
+    imprimir(ganancias) 
+restador()               
+       
+"@author: user"
