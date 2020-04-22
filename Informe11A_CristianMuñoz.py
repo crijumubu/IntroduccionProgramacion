@@ -44,6 +44,32 @@ def restador():
                 ganancias[i,i1]=resta
     print("Arreglo ganacias:")
     imprimir(ganancias) 
-restador()               
+    return(ganancias)             
        
+def mejor_ciudad():
+    ganancias= restador()
+    filas,columnas=ganancias.shape
+    suma_ganancias_bga=0
+    for i in range(0,columnas):
+        suma_ganancias_bga+=ganancias[0,i]
+    suma_ganancias_flo=0
+    for i in range(0,columnas):
+        suma_ganancias_flo+=ganancias[1,i] 
+    suma_ganancias_gir=0
+    for i in range(0,columnas):
+        suma_ganancias_gir+=ganancias[2,i]
+    suma_ganancias_pie=0
+    for i in range(0,columnas):
+        suma_ganancias_pie+=ganancias[3,i]
+    if suma_ganancias_flo<suma_ganancias_bga>suma_ganancias_gir and suma_ganancias_bga>suma_ganancias_pie:
+        print("La ciudad con mayor ganancias es Bucaramanga")
+    elif suma_ganancias_bga<suma_ganancias_flo>suma_ganancias_gir and suma_ganancias_flo>suma_ganancias_pie:
+        print("La ciudad con mayor ganancias es Floridablanca")
+    elif suma_ganancias_bga<suma_ganancias_gir>suma_ganancias_flo and suma_ganancias_gir>suma_ganancias_pie:
+        print("La ciudad con mayor ganancias es Girón")
+    else:
+        print("La ciudad con mayor ganancias es Piedecuesta")
+
+mejor_ciudad()
+        
 "@author: user"
