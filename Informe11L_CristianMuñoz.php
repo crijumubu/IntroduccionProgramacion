@@ -84,10 +84,10 @@ function restador($ingresos, $egresos)
 $ingresos=generador();
 $egresos=generador_1();
 $ganancias=restador($ingresos,$egresos);
+print "Arreglo ingresos:"."<br>";
 imprimir($ingresos);
-print("<br>");
+print "<br>"."Arreglo egresos:"."<br>";
 imprimir($egresos);
-print("<br>");
+print "<br>"."Arreglo ganancias:"."<br>";
 imprimir($ganancias);
-
 ?>
