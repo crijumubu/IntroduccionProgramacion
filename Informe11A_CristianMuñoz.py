@@ -462,6 +462,8 @@ def calcular_ganancias3D(arreglo_1_3D,arreglo_2_3D):
         ganancias3D[i]=ingresos3D[i]-egresos3D[i]
     return ganancias3D
     
+#Llamado de las funciones y ejecución
+    
 print("Arreglo ingresos:")
 ingresos,egresos=generador()
 imprimir(ingresos)
@@ -495,5 +497,4 @@ print("\n","EGRESOS:","\n")
 imprimir3D(egresos3D)
 print("\n","GANANCIAS:","\n")
 imprimir3D(ganancias3D)
-
 "@author: user"
