@@ -8,7 +8,7 @@ $Presion_semanal=[110.06,107.89,108.45,108.49,109.03,110.11,109.87,119.38,
 	122.41,122.15,124.52,123.35,125.76,121.08,122.29,105.42,
 	110.67,107.73,105.76,107.85];
 
-//Punto 1
+//Punto 2
 
 $long=count($Presion_semanal);
 $mayor=$Presion_semanal[0];
@@ -24,7 +24,7 @@ for ($i=0;$i<$long;$i++) {
 $diferencia=round($mayor-$menor,2);
 print "La diferencia entre la mayor y la menor presión promedio semanal es ".$diferencia."KPa"."<br>";
 	
-//Punto 2
+//Punto 3
 
 $suma=0;
 for ($i=0;$i<$long;$i++) {
