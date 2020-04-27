@@ -10,7 +10,7 @@ Presion_semanal=[110.06,107.89,108.45,108.49,109.03,110.11,109.87,119.38,
                  122.41,122.15,124.52,123.35,125.76,121.08,122.29,105.42,
                  110.67,107.73,105.76,107.85]
 
-#Punto 1
+#Punto 2
 
 long=len(Presion_semanal)
 #Se inicializan variables como mayor y como menor con base en la lista
@@ -26,7 +26,7 @@ diferencia=round(mayor-menor,2)
 #Se imprime la diferencia y se expresa en las unidades de medida correspondientes (KPa)
 print("La diferencia entre la mayor y la menor presión promedio semanal registrada es " + str(diferencia) + "KPa")
     
-#Punto 2
+#Punto 3
 
 suma=0
 #Se realiza un ciclo for el para calcular la suma de los datos 
