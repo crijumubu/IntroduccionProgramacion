@@ -24,7 +24,7 @@ for i in range(0,long):
         menor=Presion_semanal[i]
 diferencia=round(mayor-menor,2)
 #Se imprime la diferencia y se expresa en las unidades de medida correspondientes (KPa)
-print("La diferencia entre la mayor y la menor presion promedio semanal registrada es " + str(diferencia) + "KPa")
+print("La diferencia entre la mayor y la menor presión promedio semanal registrada es " + str(diferencia) + "KPa")
     
 #Punto 2
 
@@ -58,7 +58,7 @@ long=len(lista_ordenada)
 #Se realiza un condicional el cual nos hará saber que proceso tenemos que seguir para hallar la media
 if long%2==0:
     #Se halla los dos datos intermedios y se promedian y con esto tenemos la mediana en caso de que la cantidad de datos de la lista ordenada sea par
-    dato_intermedio=int(long/2)
+    dato_intermedio=long//2
     dato_intermedio_1=int(dato_intermedio-1)
     mediana= (lista_ordenada[dato_intermedio]+lista_ordenada[dato_intermedio_1])/2
 else:
@@ -123,7 +123,7 @@ varianza=suma/long
 #Se saca la raiz cuadrada de la varianza la cual me dará como resultado de la desviación estandar
 desviacion_estandar=round(varianza**0.5,2)
 #Se imprime la desviación estandar con sus unidades correspondientes(KPa)
-print("La desviación estandar de las temperaturas promedio semanal es: " + str(desviacion_estandar)+"K")
+print("La desviación estandar de las temperaturas promedio semanales es: " + str(desviacion_estandar)+"K")
     
 #Punto 6.3  
 
@@ -188,6 +188,6 @@ media_desviacion_mayor_menor=(desviacion_estandar_mayor+desviacion_estandar_meno
 #Se realiza la diferencia entre la desviación estandar del punto 6.2 y el resultado del promedio de las varianzas encontradas anteriormente
 diferencia_desviaciones= round((desviacion_estandar)-(media_desviacion_mayor_menor),2)
 #Se imprime esta diferencia con sus respectivas unidades
-print("La diferencia entre la desviación estandar encontrada en el punto 6.2 y la desviación estandar encontrada en el punto anterior es: " +str(diferencia_desviaciones) +"KPa")
+print("La diferencia entre la desviación estandar encontrada en el punto 6.2 y la desviación estandar encontrada en el punto anterior es: " +str(diferencia_desviaciones) +"K")
     
 "author: user"
