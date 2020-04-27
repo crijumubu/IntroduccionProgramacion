@@ -136,7 +136,7 @@ $varianza_menor=$suma_menor/($long_menor-2);
 $desviacion_estandar_menor=round($varianza_menor**0.5,2);
 print "La desviación estandar para las temperaturas que no superan la media es: ".$desviacion_estandar_menor."k"."<br>";
 
-//Punto 5
+//Punto 6.5
 
 $media_desviacion_mayor_menor=($desviacion_estandar_mayor+$desviacion_estandar_menor)/2;
 $diferencia_desviaciones=round(($desviacion_estandar)-($media_desviacion_mayor_menor),2);
