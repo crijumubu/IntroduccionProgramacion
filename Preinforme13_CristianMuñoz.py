@@ -16,7 +16,7 @@ Supercomputadoras = np.array([
     ['SuperMUC-NG' , '305856' , '19476' , '26873'],
     ['Lasen' , '288288' , '18200' , '23047']])
 
-#Lista de listas de las supercomputadoras según su promedio de los valores asignados, imprimir la supercomputadora con su respectivo promedio
+#Realizar una lista de listas de las supercomputadoras que contenga el nombre de cada supercomputadora con su respectivo promedio
 
 #Se inicializa una lista la cual contendrá las listas de cada una de las supercomputadoras con su respectivo promedio
 lista_promedio=[]
@@ -79,7 +79,7 @@ while c!=0:
     else:
         print("El diccionario quedó así: ",Supercomputadoras_TFlops,"\n")
 
-#Con base en el primer punto halle la desviación estandar para cada supercomputadora
+#Con base en el primer punto halle la desviación estándar para cada supercomputadora
 
 #Se inicializa variable
 long=len(lista_promedio)
