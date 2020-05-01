@@ -16,7 +16,7 @@ Supercomputadoras = np.array([
     ['SuperMUC-NG' , '305856' , '19476' , '26873'],
     ['Lasen' , '288288' , '18200' , '23047']])
 
-#Lista de listas de supercomputadoras según su promedio de los valores asignados, imprimir la supercomputadora con su respectivo promedio
+#Lista de listas de las supercomputadoras según su promedio de los valores asignados, imprimir la supercomputadora con su respectivo promedio
 
 #Se inicializa una lista la cual contendrá las listas de cada una de las supercomputadoras con su respectivo promedio
 lista_promedio=[]
@@ -39,7 +39,7 @@ for i in range(0,filas):
     #Por medio de la lista variable hecha anteriormente se agrega a la 'lista_promedio' inicializada al inicio del problema
     lista_promedio.append(lista_variable)
 #Se imprime la lista de listas para verificar el resultado
-print(lista_promedio,"\n")
+print("Lista de las supercomputadoras según su promedio de los valores asignados: ",lista_promedio,"\n")
 
 #Crear un diccionario el cual contenga las supercomputadoras con su máximo de T/Flops y el usuario pueda modificar el máximo de T/Flops de la supercomputadora que él desee, puede hacerlo las veces que quiera y los cambios serán guardados
 
@@ -61,18 +61,18 @@ while c!=0:
         #Se inicializa el diccionario
         Supercomputadoras_TFlops={}
         #Se realiza un ciclo for y dentro de este un condicional el cual me permitirá asignarle los valores correspondientes al diccionario
-        for i1 in range(0,long):
-            if a!=i1:
-                Supercomputadoras_TFlops[Supercomputadoras[i1][0]]=Supercomputadoras[i1][3]
+        for i in range(0,long):
+            if a!=i:
+                Supercomputadoras_TFlops[Supercomputadoras[i][0]]=Supercomputadoras[i][3]
             else:
-                Supercomputadoras_TFlops[Supercomputadoras[i1][0]]=b
+                Supercomputadoras_TFlops[Supercomputadoras[i][0]]=b
     else:
         #Se realiza un ciclo for y dentro de este un condicional el cual me permitirá asignarle el valor ingresado por el usurio a la supercomputadora correspondiente y una vez que lo asignado se saldrá del ciclo
-        for i1 in range(0,long):
-            if a!=i1:
-                Supercomputadoras_TFlops[Supercomputadoras[i1][0]]=b
+        for i in range(0,long):
+            if a==i:
+                Supercomputadoras_TFlops[Supercomputadoras[i][0]]=b
                 break
-    c=int(input("Si desea probar otra modificación ingrese un número diferente de cero: "))
+    c=int(input("Si desea ingresar otra modificación ingrese un número diferente de cero: "))
     #Se realiza un condicional el cual me permitirá imprimir cierto mensaje dependiendo la condición y me imprimirá el diccionario
     if c!=0:
         print("Hasta el momento así va el diccionario: ",Supercomputadoras_TFlops)
