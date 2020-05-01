@@ -92,7 +92,7 @@ for i in range(0,long):
     #Se divide la sumatoria y se divide en la cantidad de columnas -2 y hallamos la varianza, -2 porque de todas las columnas tomamos una menos y como es desviación estandar muestral ya que no tomamos en cuenta todos los valores de donde sacamos la información tenemos que restarle 1
     varianza=(sumatoria)/(columnas-2)
     #Se saca la raiz cuadrada de la varianza y encontramos la desviación estandar
-    desviación_estandar=round(varianza**0.5,2)
-    print("La desviación estandar de los valores de la supercomputadora",Supercomputadoras[i][0], "es: ", desviación_estandar)
+    desviacion_estandar=round(varianza**0.5,2)
+    print("La desviación estandar de los valores de la supercomputadora",Supercomputadoras[i][0], "es: ", desviacion_estandar)
     
 "@author: user" 
