@@ -12,7 +12,7 @@ $Supercomputadoras = array(
     array('Lasen' , '288288' , '18200' , '23047')
 );
 
-//Lista de listas de las supercomputadoras según su promedio de los valores asignados, imprimir la supercomputadora con su respectivo promedio
+//Realizar una lista de listas de las supercomputadoras que contenga el nombre de cada supercomputadora con su respectivo promedio
 
 $lista_promedio=[];
 $niveles=count($Supercomputadoras);
@@ -35,7 +35,7 @@ for ($i=0;$i<$long;$i++) {
 	print $lista_promedio[$i][0].': '.$lista_promedio[$i][1]."<br>";
 }
 
-//Con base en el primer punto halle la desviación estandar para cada supercomputadora
+//Con base en el primer punto halle la desviación estándar para cada supercomputadora
 
 for ($i=0;$i<$long;$i++) {
 	$sumatoria=0;
@@ -49,13 +49,14 @@ for ($i=0;$i<$long;$i++) {
 	
 //Crear un diccionario el cual contenga las supercomputadoras con su máximo de T/Flops y el usuario pueda modificar el máximo de T/Flops de la supercomputadora que él desee, se podrá modificar las veces que se quiera pero los cambios no quedarán guardados
 
+$cont=0;
+print "<br>";
+for ($i=0;$i<$niveles;$i++) {
+	print $cont.'->'.$Supercomputadoras[$i][0]."<br>";
+	$cont+=1;
+}
+print "<br>";
 if (isset($_POST['resultado'])) {
-	$cont=0;
-	print "<br>";
-	for ($i=0;$i<$niveles;$i++) {
-		print $cont.'->'.$Supercomputadoras[$i][0]."<br>";
-		$cont+=1;
-	}
 	$n1=$_POST['n1'];
 	$n2=$_POST['n2'];
 	$Supercomputadoras_TFlops=array();
