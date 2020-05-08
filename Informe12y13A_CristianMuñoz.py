@@ -276,6 +276,7 @@ def Punto10(jugador,premium):
     
     #Punto 10.3
     
+    print("La cantidad de veces que aparece cada carta en la lista final de cartas del jugador es:")
     #Se crea una copia de la lista jugador y se inicializan variables
     jugador_copia=jugador.copy()
     cont_cartas=1
@@ -447,7 +448,9 @@ sobre_uno_y_dos=Combinador(sobre_uno,sobre_dos)
 paquete=Combinador(sobre_uno_y_dos,sobre_tres)
 paquete_final=Loteria(paquete,jugador)
 jugador_final=jugador_y_paquete(paquete_final,jugador)
-Punto10(jugador,premium)
+print("La lista del jugador quedó de la siguiente manera:")
+Imprimir(jugador_final)
+Punto10(jugador_final,premium)
 
 #%%PARTE B
 
